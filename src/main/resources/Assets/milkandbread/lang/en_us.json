@@ -1,5 +1,9 @@
 {
   "item.milkandbread.soybean": "Soybean",
   "item.milkandbread.soybean_seeds": "Soybean Seeds",
+  "item.milkandbread.salt": "Salt",
+
+  "block.milkandbread.halite_block": "Halite",
+
   "creativetab.cooking_tab": "Cooking"
 }

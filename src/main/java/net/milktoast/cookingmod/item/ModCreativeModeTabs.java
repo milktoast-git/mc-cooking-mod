@@ -1,6 +1,7 @@
 package net.milktoast.cookingmod.item;
 
 import net.milktoast.cookingmod.MilkAndBread;
+import net.milktoast.cookingmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,6 +20,9 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.SOYBEAN_SEEDS.get());
                         output.accept(ModItems.SOYBEAN.get());
+                        output.accept(ModItems.SALT.get());
+
+                        output.accept(ModBlocks.HALITE_BLOCK.get());
                     })
                     .build());
 

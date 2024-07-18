@@ -1,6 +1,7 @@
 package net.milktoast.cookingmod;
 
 import com.mojang.logging.LogUtils;
+import net.milktoast.cookingmod.block.ModBlocks;
 import net.milktoast.cookingmod.item.ModCreativeModeTabs;
 import net.milktoast.cookingmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -29,8 +30,9 @@ public class MilkAndBread
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeModeTabs.register(modEventBus);
-
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
