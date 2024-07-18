@@ -1,6 +1,9 @@
 package net.milktoast.cookingmod;
 
 import com.mojang.logging.LogUtils;
+import net.milktoast.cookingmod.item.ModCreativeModeTabs;
+import net.milktoast.cookingmod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -21,9 +24,13 @@ public class MilkAndBread
     public static final String MOD_ID = "milkandbread";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
+
     public MilkAndBread() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -39,6 +46,10 @@ public class MilkAndBread
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.SOYBEAN);
+            event.accept(ModItems.SOYBEAN_SEEDS);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
