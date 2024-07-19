@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "milkandbread:item/raw_sapphire"
+    "layer0": "milkandbread:item/soybean_seeds"
   }
 }

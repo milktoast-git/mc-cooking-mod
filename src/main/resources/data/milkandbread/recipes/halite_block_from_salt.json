@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "milkandbread:salt"
+    }
+  },
+  "result": {
+    "item": "milkandbread:halite_block"
+  }
+}

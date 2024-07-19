@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "milkandbread:halite_block"
+    }
+  ],
+  "result": {
+    "item": "milkandbread:salt",
+    "count": 4
+  }
+}

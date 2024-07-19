@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "milkandbread:soybean"
+    }
+  ],
+  "result": {
+    "item": "milkandbread:soybean_seeds",
+    "count": 1
+  }
+}
